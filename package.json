@@ -2,9 +2,12 @@
   "name": "connectsphere",
   "version": "1.0.0",
   "description": "Root package for ConnectSphere MERN Deployment",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "cd server && npm start",
-    "install-all": "cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build"
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && node server.js"
   }
 }
