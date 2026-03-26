@@ -1,0 +1,10 @@
+{
+  "name": "connectsphere",
+  "version": "1.0.0",
+  "description": "Root package for ConnectSphere MERN Deployment",
+  "scripts": {
+    "start": "cd server && npm start",
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  }
+}
